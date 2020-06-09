@@ -1,0 +1,12 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: app-conf
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/sfyp/conf.git
+          search-paths:
+          - 

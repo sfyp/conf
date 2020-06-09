@@ -1,0 +1,9 @@
+my:
+  id: 1
+  name: me
+  pass: me
+spring:
+  thymeleaf:
+    mode: HTML5
+    cache: false
+    encoding: UTF-8

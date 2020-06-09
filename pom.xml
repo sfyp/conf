@@ -7,7 +7,31 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>conf Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>2.2.0.RELEASE</version>
+  	<relativePath></relativePath>
+  </parent>
+  
+  <dependencyManagement>
+  	<dependencies>
+  		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+		    <artifactId>spring-cloud-dependencies</artifactId>
+		    <version>Hoxton.SR3</version>
+			<scope>import</scope>
+			<type>pom</type>
+		</dependency>
+  	</dependencies>
+  </dependencyManagement>
+  
   <dependencies>
+  	<dependency>
+	    <groupId>org.springframework.cloud</groupId>
+	    <artifactId>spring-cloud-config-server</artifactId>
+	</dependency>
     <!-- httpServlet -->
   	<dependency>
   		<groupId>javax.servlet</groupId>
@@ -18,5 +42,11 @@
   </dependencies>
   <build>
     <finalName>conf</finalName>
+    <plugins>
+    	<plugin>
+    		<groupId>org.springframework.boot</groupId>
+    		<artifactId>spring-boot-maven-plugin</artifactId>
+    	</plugin>
+    </plugins>
   </build>
 </project>
