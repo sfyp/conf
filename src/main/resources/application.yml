@@ -9,4 +9,5 @@ spring:
         git:
           uri: https://github.com/sfyp/conf.git
           search-paths:
-          - 
+          - src/main/resources
+          
