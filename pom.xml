@@ -30,6 +30,14 @@
   <dependencies>
   	<dependency>
 	    <groupId>org.springframework.cloud</groupId>
+	    <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+	</dependency>
+  	<dependency>
+  		<groupId>org.springframework.cloud</groupId>
+  		<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+  	</dependency>
+  	<dependency>
+	    <groupId>org.springframework.cloud</groupId>
 	    <artifactId>spring-cloud-config-server</artifactId>
 	</dependency>
     <!-- httpServlet -->
@@ -39,6 +47,7 @@
   		<version>3.1.0</version>
   		<scope>provided</scope>
   	</dependency>
+  	
   </dependencies>
   <build>
     <finalName>conf</finalName>
